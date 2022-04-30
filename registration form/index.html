@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="app.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script>
+      function showInput() {
+        document.getElementById('name').innerHTML = 
+        document.getElementById('fname').value;
+        document.getElementById('name2').innerHTML = 
+        document.getElementById('lname').value;
+        document.getElementById('email2').innerHTML = 
+        document.getElementById('email1').value;
+        // document.getElementById('pass2').innerHTML = 
+        // document.getElementById('pass1').value;
+        document.getElementById('address2').innerHTML = 
+        document.getElementById('address1').value;
+        document.getElementById('city2').innerHTML = 
+        document.getElementById('city1').value;
+        document.getElementById('state2').innerHTML = 
+        document.getElementById('state1').value;
+        document.getElementById('zip2').innerHTML = 
+        document.getElementById('zip1').value;
+        document.getElementById('contact2').innerHTML = 
+        document.getElementById('contact1').value;
+
+          
+           
+      }
+  </script> 
+</head>
+<body style="background-color: lightblue;">
+    <p style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: royalblue; text-align: center; font-size:xx-large;">REGISTRATION FORM</p>
+   <br /><br /> 
+    <form>
+      <label style="font-family:Verdana, Geneva, Tahoma, sans-serif; text-align: center;margin-left: 30%; ;"><strong>First Name</strong> </label>
+      <input type="text" name="fname" id="fname" placeholder="First Name">
+      <label style="font-family:Verdana, Geneva, Tahoma, sans-serif; text-align: center; margin-left: 2%;"><strong>Last Name</strong> </label>
+      <input type="text" style="margin-left: 3%;" name="lname" id="lname" placeholder= "Last Name">
+      <label style="font-family:Verdana, Geneva, Tahoma, sans-serif; text-align: center; margin-left: 30%;margin-top: 20px;"><strong>Email</strong></label>
+      <input type="email" name="email" id="email1" style="margin-left: 3%;">
+      <label style="font-family:Verdana, Geneva, Tahoma, sans-serif; text-align: center; margin-top: 20px ; margin-left: 2%; "><strong>Password</strong></label>
+      <input type="password" name="num" id="pass1" placeholder= "Enter Password">
+      <label style="font-family:Verdana, Geneva, Tahoma, sans-serif; text-align: center; margin-left: 30%; margin-top: 20px;"><strong>Address</strong></label>
+      <input type="text" style="width: 40%; margin-left: 2%;" name="address" id="address1" placeholder= "Address">
+      <label style="font-family:Verdana, Geneva, Tahoma, sans-serif; text-align: center; margin-left: 30%; margin-top: 20px;"><strong>City</strong></label>
+      <input type="text" style="width: 20%; margin-left: 4%;" name="city" id="city1" placeholder= "City">
+      <label style="font-family:Verdana, Geneva, Tahoma, sans-serif; text-align: center; margin-left: 2%; margin-top: 20px;"><strong>State</strong></label>
+      <input type="text" style="width: 10%; margin-left: 2%;" name="state" id="state1" placeholder= "City">
+      <label style="font-family:Verdana, Geneva, Tahoma, sans-serif; text-align: center; margin-left: 30%; margin-top: 20px;"><strong>Zip Code</strong></label>
+      <input type="number" style="width: 10%; margin-left: 2%;" name="zip" id="zip1" placeholder="Zip Code">
+      <label style="font-family:Verdana, Geneva, Tahoma, sans-serif; text-align: center; margin-left: 5%; margin-top: 20px;"><strong>Contact Number</strong></label>
+      <input type="number" style="width: 10%; margin-left: 2%;" name="state" id="contact1" placeholder="Contact Number">
+
+    </form>
+  
+    <input type="submit" style="margin-left: 50%; background-color: royalblue; color: white; margin-top: 30px; border-radius: 5px;" onclick="showInput();"><br/>
+    <div style="margin-left: 30%; border: 1px solid black; width: 50%; margin-top: 20px;">
+      <label >Your input: </label>
+      <p><span id='name'></span><br /><span id='name2'></span>
+        <br /><span id='email2'></span><br /><span id='pass2'></span>
+        <br /><span id='address2'></span><br /><span id='city2'></span>
+        <br /><span id='state2'></span><br /><span id='zip2'></span>
+        <br /><span id='contact2'></span>
+      </p>
+
+    </div>
+    <h2>Made By Laiba Sohail</h2>
+   
+
+</body>
+</html>
+
+
+  
